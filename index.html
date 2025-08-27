@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VanGoing - Pet Friendly</title>
+    <link rel="stylesheet" href="2020952/_next/static/css/8b0e7c3a5ff17b50.css" />
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+ 
+
+    <style>
+        /* Estilos para la fuente Pacifico (logo), cargada desde Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        h1.font-pacifico, h3.font-pacifico {
+            font-family: 'Pacifico', cursive;
+        }
+
+        /* ESTILOS PARA EL FORMULARIO MODAL DE WHATSAPP */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none; /* Oculto por defecto */
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .modal-content {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #888;
+        }
+        .modal-content h4 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .modal-content p {
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+        .modal-content input {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 0.5rem;
+        }
+        .modal-submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background-color: #25D366;
+            color: white;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .modal-footer-text {
+            font-size: 0.8rem;
+            color: #aaa;
+            margin-top: 1rem;
+        }
+
+      
+    </style>
+
+    <style>
+    #whatsapp-contact-button {
+        display: flex;
+        width: 100%; /* Ocupa todo el ancho en móvil */
+        justify-content: center;
+    }
+
+    @media (min-width: 640px) { /* En pantallas de escritorio... */
+        #whatsapp-contact-button {
+            display: inline-flex; /* Se comporta como texto para poder centrarse */
+            width: auto; /* Se ajusta al tamaño del contenido */
+        }
+    }
+</style>
+</head>
+<body class="antialiased">
+
+    <div class="min-h-screen bg-white">
+        <section class="relative bg-gradient-to-br from-[#afdbf9] to-blue-200 text-gray-800 overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <img src="https://readdy.ai/api/search-image?query=Happy%20family%20with%20golden%20retriever%20dog%20traveling%20in%20modern%20bus%20interior%2C%20pet-friendly%20transportation%2C%20comfortable%20seating%20with%20pets%2C%20bright%20and%20clean%20bus%20interior%20with%20light%20blue%20and%20orange%20accents%2C%20professional%20travel%20photography&amp;width=1200&amp;height=800&amp;seq=hero-VanGoing&amp;orientation=landscape" alt="VanGoing Hero" class="w-full h-full object-cover object-top" />
+            </div>
+            <div class="relative max-w-7xl mx-auto px-4 py-24 text-center">
+                <div class="mb-8">
+                    <img src="img/logo-dark.png" alt="Logo de VanGoing" class="h-14 mx-auto mb-4">
+                    <div class="w-24 h-1 bg-[#ce5f32] mx-auto"></div>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-800">¡Lleva a tu mejor amigo<br> sin complicaciones!</h2>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-700">Estamos preparando el primer servicio <br>de transporte grupal 100% First Pet Friendly</p>
+                <div style="display: inline-block; background-color: #1f2937; color: white; padding: 1rem 2rem; border-radius: 0.75rem; font-weight: 600; font-size: 1.125rem;">¡Pronto estaremos al aire!</div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">Sobre Nosotros</h2>
+                    <div class="w-20 h-1 bg-[#afdbf9] mx-auto mb-8"></div>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Somos especialistas en transporte grupal cómodo,<br> seguro y adaptado para ti y tu mascota</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="/img/banner-pet-3.jpg" alt="Familia viajando con mascota" class="w-full h-80 object-cover object-top rounded-2xl shadow-lg" />
+                    </div>
+                    <div class="space-y-6">
+                        <h3 class="text-3xl font-bold text-gray-800">Conduciendo con Amor y Cuidado por Ellos</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed">En VanGoing, nos especializamos en ofrecer transporte grupal cómodo, seguro y adaptado para ti y tu mascota. Ya sea para viajes escolares, eventos familiares o escapadas de fin de semana, nuestros autobuses modernos están pensados para que tanto humanos como peludos disfruten el trayecto.</p>
+                        
+                        <div class="bg-orange-100 border-l-4 border-[#ce5f32] p-4 rounded">
+                            <p class="text-orange-800 font-semibold">🐾 Preparando el mejor servicio de transporte para ti y tu mascota</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+     <section>
+    <picture>
+        <source media="(max-width: 767px)" srcset="/img/banner-pet-2.jpg">
+
+        <img src="/img/banner-pet.jpg" alt="Banner de VanGoing con una pareja y su perro en una van" class="w-full h-auto">
+    </picture>
+</section>
+
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">Somos tu Mejor Opción</h2>
+                    <div class="w-20 h-1 bg-[#afdbf9] mx-auto mb-8"></div>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Transporte especializado donde tu mascota viaja tan cómoda como tú</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                        <div class="w-20 h-20 bg-[#afdbf9] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-300">
+                            <i class="ri-bus-2-line text-3xl text-gray-800"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Viajes Pet Friendly</h3>
+                        <p class="text-gray-600 leading-relaxed mb-4">Mascotas hasta 5kg viajan sin costo adicional. Espacios adaptados para viajar cómodamente con asientos especiales.</p>
+                        <div class="mt-4 text-[#ce5f32] font-semibold">Próximamente...</div>
+                    </div>
+
+                    <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                        <div class="w-20 h-20 bg-[#afdbf9] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-300">
+                            <i class="ri-heart-3-line text-3xl "></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Conductores Amantes de Animales</h3>
+                        <p class="text-gray-600 leading-relaxed mb-4">Personal capacitado y amante de las mascotas, con descuentos especiales: adultos mayores reciben 30% de descuento.</p>
+                        <div class="mt-4 text-[#ce5f32] font-semibold">Próximamente...</div>
+                    </div>
+
+                    <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                        <div class="w-20 h-20 bg-[#afdbf9] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-300">
+                            <i class="ri-customer-service-2-line text-3xl text-gray-800"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Asistencia en Ruta</h3>
+                        <p class="text-gray-600 leading-relaxed mb-4">Servicio de asistencia durante todo el viaje. Tarifas accesibles sin costos ocultos y soluciones personalizadas.</p>
+                        <div class="mt-4 text-[#ce5f32] font-semibold">Próximamente...</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20" style="background-image: url('img/fondo.png'); background-size: cover; background-position: center; background-color: #b3d9f9; background-attachment: fixed;">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-6 text-gray-800">¡Mantente Conectado!</h2>
+                    <div class="w-20 h-1 bg-[#ce5f32] mx-auto mb-8"></div>
+                   <p class="text-xl max-w-3xl mx-auto" style="background-color: #1f2937; color: white; padding: 1rem 1.5rem; border-radius: 8px; display: inline-block;">Sé el primero en viajar con tu mascota cuando lancemos nuestro servicio</p>
+                </div>
+                
+               <div class="space-y-12">
+
+    <div class="max-w-3xl mx-auto text-center">
+            <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-8">
+                <h3 class="text-3xl font-bold mb-6 text-gray-800">¿Tienes Preguntas sobre Viajar con tu Mascota?</h3>
+                <p class="text-xl mb-8 text-gray-700">Estamos aquí para resolver todas tus dudas<br> sobre nuestro transporte Pet Friendly</p>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-center space-x-4">
+                        <div class="w-12 h-12 bg-[#ce5f32] rounded-full flex items-center justify-center"><i class="ri-mail-line text-xl text-white"></i></div>
+                        <span class="text-lg text-gray-700">info@VanGoing.com</span>
+                    </div>
+                    <div class="flex items-center justify-center space-x-4">
+                        <div class="w-12 h-12 bg-[#ce5f32] rounded-full flex items-center justify-center"><i class="ri-phone-line text-xl text-white"></i></div>
+                        <span class="text-lg text-gray-700">+52 1 56 2844 4229</span>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+   <div class="max-w-3xl mx-auto text-center">
+    <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-6 md:p-8">
+        <h4 class="text-xl md:text-2xl font-bold mb-6 text-gray-800">Contáctanos por WhatsApp</h4>
+        <p class="text-base md:text-lg mb-8 text-gray-700">¿Quieres viajar con tu mascota? ¡Escríbenos!</p>
+        
+        <button id="whatsapp-contact-button" onclick="openWhatsAppModal()" class="items-center space-x-3 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:transform hover:scale-105 cursor-pointer whitespace-nowrap">
+            <div class="w-8 h-8 flex items-center justify-center"><i class="ri-whatsapp-line text-2xl"></i></div>
+            <span>Escríbenos por WhatsApp</span>
+        </button>
+        
+        <p class="text-sm mt-4 text-gray-600">Respondemos en menos de 24 horas</p>
+    </div>
+</div>
+</div>
+
+</div>
+                <div class="text-center mt-16">
+                    <div class="bg-[#ce5f32] text-white px-12 py-6 rounded-2xl inline-block">
+                        <h3 class="text-2xl font-bold mb-2">¡El Transporte Pet Friendly se Acerca!</h3>
+                        <p class="text-lg">Tu mascota también merece viajar cómoda</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-gray-800 text-white py-12">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center">
+                    <img src="img/logo.png" alt="Logo de BusPet" class="h-20 mx-auto mb-4">
+                    <p class="text-gray-400 mb-6">Próximamente: Transporte cómodo y seguro para ti y tu mejor amigo</p>
+                    <div class="flex justify-center space-x-6 mb-8">
+                        <a href="#" class="w-12 h-12 bg-[#afdbf9] hover:bg-blue-300 rounded-full flex items-center justify-center transition-colors cursor-pointer"><i class="ri-instagram-line text-xl text-gray-800"></i></a>
+                        <a href="#" class="w-12 h-12 bg-[#afdbf9] hover:bg-blue-300 rounded-full flex items-center justify-center transition-colors cursor-pointer"><i class="ri-facebook-line text-xl text-gray-800"></i></a>
+                        <a href="#" class="w-12 h-12 bg-[#afdbf9] hover:bg-blue-300 rounded-full flex items-center justify-center transition-colors cursor-pointer"><i class="ri-twitter-line text-xl text-gray-800"></i></a>
+                    </div>
+                    <div class="border-t border-gray-700 pt-8 text-gray-400">
+                        <p>© 2025 VanGoing. Todos los derechos reservados.</p>
+                        <p class="mt-2">Preparándose para llevar a tu mascota a lugares increíbles</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <button onclick="openWhatsAppModal()" class="fixed bottom-6  right-6 w-16 h-16 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center z-40 cursor-pointer hover:scale-110">
+            <i class="ri-whatsapp-line text-2xl"></i>
+        </button>
+    </div>
+
+    <div id="whatsapp-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeWhatsAppModal()">&times;</span>
+            <i class="ri-whatsapp-line" style="font-size: 3rem; color: #25D366; margin-bottom: 1rem;"></i>
+            <h4>Contáctanos por WhatsApp</h4>
+            <p>Te conectaremos directamente con nuestro equipo Pet Friendly</p>
+            <form id="whatsapp-form">
+                <input type="text" id="wa-name" placeholder="Nombre completo *" required>
+                <input type="email" id="wa-email" placeholder="Correo electrónico *" required>
+                <button type="submit" class="modal-submit-btn">Abrir WhatsApp</button>
+            </form>
+            <p class="modal-footer-text">Al continuar, serás redirigido a WhatsApp con tus datos precargados</p>
+        </div>
+    </div>
+
+
+    <script>
+        const modal = document.getElementById('whatsapp-modal');
+        const form = document.getElementById('whatsapp-form');
+        const phoneNumber = '5215628444229'; // El número de teléfono
+
+        function openWhatsAppModal() {
+            modal.style.display = 'flex';
+        }
+
+        function closeWhatsAppModal() {
+            modal.style.display = 'none';
+        }
+
+        // Cierra el modal si se hace clic fuera del contenido
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                closeWhatsAppModal();
+            }
+        }
+
+        // Maneja el envío del formulario
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que la página se recargue
+
+            const name = document.getElementById('wa-name').value;
+            const email = document.getElementById('wa-email').value;
+
+            // Construye el mensaje pre-llenado
+            const message = `¡Hola! 👋 Mi nombre es ${name} y mi correo es ${email}. Me gustaría recibir más información sobre sus servicios de transporte Pet Friendly. ¡Gracias!`;
+
+            // Codifica el mensaje para la URL
+            const encodedMessage = encodeURIComponent(message);
+
+            // Crea el enlace de WhatsApp y ábrelo en una nueva pestaña
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+            window.open(whatsappUrl, '_blank');
+
+            // Cierra el modal después de enviar
+            closeWhatsAppModal();
+        });
+    </script>
+
+</body>
+</html>
