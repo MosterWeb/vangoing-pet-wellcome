@@ -4,5 +4,7 @@ Copyright (c) [Año] [Tu Nombre o Nombre de tu Empresa]
 Todos los derechos reservados.
 
 Este software es de propiedad exclusiva del autor y no puede ser utilizado, copiado, modificado, distribuido o compartido sin un permiso escrito explícito del propietario. Cualquier uso no autorizado está estrictamente prohibido y puede ser sujeto a acciones legales.
+Solo la empresa VanGoing puede usar este código, como parte de su modelo de negocio para ofrecer
+sus servicios y afines.
 
 Para solicitar permiso de uso, contacta a [tu correo o forma de contacto].
